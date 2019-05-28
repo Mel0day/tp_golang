@@ -24,7 +24,7 @@ import "github.com/ttcjpay/tp_golang/tt_pay/util"
 ## 依赖版本
 
 ## 快速接入
-本部分以预下单接口为例，演示如何快速接入财经支付SDK。其他接口的接入方法与预下单接口类似，主要差别在于商户传入参数不同。具体请见：各接口demo https://demo.caijing, sdk接入文档 https://documents.caijig及sdk源码https://source.caijing. 
+本部分以预下单接口为例，演示如何快速接入财经支付SDK。其他接口的接入方法与预下单接口类似，主要差别在于商户传入参数不同。具体请见：各接口demo https://github.com/ttcjpay/tp_golang/tree/master/demo,财经支付接入文档 http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf. 
 
 #### 步骤一：设置
 调用SetDebugMode可设置是否进入Debug模式，传入true打开debug模式，传输false关闭debug模式
@@ -76,8 +76,8 @@ DoSomething()
 ```
 
 ## API示例
-完整的各API使用Demo可以在https://github.com/ttcjpay/tp_golang/tree/master/demo找到。
-完整的开发文档可在http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf找到。
+完整的各API使用Demo可以在 https://github.com/ttcjpay/tp_golang/tree/master/demo 找到。
+完整的接入文档可在 http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf 找到。
 注意：为使接口正常工作，请务必按照开发文档要求正确传入所有参数，漏传、多传以及不正确的参数格式将使接口失效！
 
 // TODO: 贴每个demo的链接
