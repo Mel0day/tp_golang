@@ -1,8 +1,8 @@
 package tt_pay
 
 import (
-	"code.byted.org/caijing_pay/tp_server_sdk/tp_golang/tt_pay/util"
 	"context"
+	"github.com/ttcjpay/tp_golang/tt_pay/util"
 	"io/ioutil"
 	"log"
 	"net"

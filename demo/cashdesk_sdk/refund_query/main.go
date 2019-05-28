@@ -2,10 +2,10 @@ package main
 
 
 import (
-	"code.byted.org/caijing_pay/tp_server_sdk/tp_golang/tt_pay"
-	"code.byted.org/caijing_pay/tp_server_sdk/tp_golang/tt_pay/util"
 	"context"
 	"fmt"
+	"github.com/ttcjpay/tp_golang/tt_pay"
+	"github.com/ttcjpay/tp_golang/tt_pay/util"
 )
 
 func main() {

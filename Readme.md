@@ -11,15 +11,15 @@
 安装财经支付SDK前，请确保安装GO并正确设置环境变量以及WorkSpace。
 下载SDK：
 ```go
-go get -u github.com/sdfsgffdgdfg
+go get -u github.com/ttcjpay/tp_golang/tt_pay
 ```
 导入SDK：
 ```go
-import "github.com/afsf/sdfsdf/sdfsdf/tt_pay"
+import "github.com/ttcjpay/tp_golang/tt_pay"
 ```
 要设置Debug模式，还需导入：
 ```go
-import "github.com/sdfsd/sfsdfsd/fsdfsd/util"
+import "github.com/ttcjpay/tp_golang/tt_pay/util"
 ```
 ## 版本
 
@@ -38,12 +38,12 @@ util.SetDebugMode(true)
  - CashdeskTradeType = "H5" (只在预下单时需要，默认为H5)
  - Config.TPDomain = "https://tp-pay.snssdk.com"
  
-要自定义参数，请仔细查阅接入手册https://abc.abc
+要自定义参数，请仔细查阅接入手册https://tp-pay.snssdk.com/vip-develop/down.html
 ```go
 conf := tt_pay.Config{
-    AppId:      "800000040004",
-    AppSecret:  "你的APP密钥",
-    MerchantId: "1300000004",
+    AppId:"__________________", // 支付方分配给业务方的ID，用于获取 签名/验签 的密钥信息
+    AppSecret:"______________", // 支付方密钥
+    MerchantId:"_____________", // 支付方分配给业务方的商户编号
     TPDomain:"https://tp-pay-test.snssdk.com",
     TPClientTimeoutMs:6000,
 }
@@ -56,7 +56,7 @@ req.Subject = "测试订单"
 req.Body = "测试订单内容"
 req.TradeTime = fmt.Sprintf("%d", time.Now().Unix())
 req.ValidTime = "3600"
-req.NotifyUrl = "https://tp-pay-test.snssdk.com/callback_success?app_id=800000040004"
+req.NotifyUrl = "https://google.com"
 req.RiskInfo = `{"ip":"127.0.0.1", "device_id":"122333"}`
 // 支付方式（必填）：可选值：SDK|H5。
 // SDK：业务方App必须是头条主端App，或者具备头条主端支付SDK及ToutiaoJSBridge的能力
@@ -76,8 +76,8 @@ DoSomething()
 ```
 
 ## API示例
-完整的各API使用Demo可以在https://abc.abc找到。
-完整的开发文档可在https://document.abc找到。
+完整的各API使用Demo可以在https://github.com/ttcjpay/tp_golang/tree/master/demo找到。
+完整的开发文档可在http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf找到。
 注意：为使接口正常工作，请务必按照开发文档要求正确传入所有参数，漏传、多传以及不正确的参数格式将使接口失效！
 
 // TODO: 贴每个demo的链接

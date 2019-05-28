@@ -1,10 +1,10 @@
 package tt_pay
 
 import (
-	"code.byted.org/caijing_pay/tp_server_sdk/tp_golang/tt_pay/consts"
-	"code.byted.org/caijing_pay/tp_server_sdk/tp_golang/tt_pay/util"
 	"context"
 	"errors"
+	"github.com/ttcjpay/tp_golang/tt_pay/consts"
+	"github.com/ttcjpay/tp_golang/tt_pay/util"
 	"net/url"
 )
 
