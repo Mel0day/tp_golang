@@ -24,7 +24,7 @@ import "github.com/ttcjpay/tp_golang/tt_pay/util"
 ## 依赖版本
 
 ## 快速接入
-本部分以预下单接口为例，演示如何快速接入财经支付SDK。其他接口的接入方法与预下单接口类似，主要差别在于商户传入参数不同。具体请见：各接口demo https://github.com/ttcjpay/tp_golang/tree/master/demo,财经支付接入文档 http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf. 
+本部分以预下单接口为例，演示如何快速接入财经支付SDK。其他接口的接入方法与预下单接口类似，主要差别在于商户传入参数不同。具体请见：各接口demo https://github.com/ttcjpay/tp_golang/tree/master/demo ，财经支付接入文档 http://lf6-ttcdn-tos.pstatp.com/obj/caijing-tp-cashdesk-bucket1/cashdesk_pay.pdf. 
 
 #### 步骤一：设置
 调用SetDebugMode可设置是否进入Debug模式，传入true打开debug模式，传输false关闭debug模式
@@ -37,8 +37,7 @@ util.SetDebugMode(true)
  - SignType = "MD5"
  - CashdeskTradeType = "H5" (只在预下单时需要，默认为H5)
  - Config.TPDomain = "https://tp-pay.snssdk.com"
- 
-要自定义参数，请仔细查阅接入手册https://tp-pay.snssdk.com/vip-develop/down.html
+要自定义参数，请仔细查阅接入手册 https://tp-pay.snssdk.com/vip-develop/down.html 。
 ```go
 conf := tt_pay.Config{
     AppId:"__________________", // 支付方分配给业务方的ID，用于获取 签名/验签 的密钥信息
