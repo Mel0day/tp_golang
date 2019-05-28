@@ -21,7 +21,7 @@ import "github.com/ttcjpay/tp_golang/tt_pay"
 ```go
 import "github.com/ttcjpay/tp_golang/tt_pay/util"
 ```
-## 版本
+## 依赖版本
 
 ## 快速接入
 本部分以预下单接口为例，演示如何快速接入财经支付SDK。其他接口的接入方法与预下单接口类似，主要差别在于商户传入参数不同。具体请见：各接口demo https://demo.caijing, sdk接入文档 https://documents.caijig及sdk源码https://source.caijing. 
